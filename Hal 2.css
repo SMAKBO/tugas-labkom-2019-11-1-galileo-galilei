@@ -1,0 +1,16 @@
+h1 {
+	color: white;
+	}
+body {
+	background-image: url("TVoBwv.jpg");
+	margin-left: 2cm;
+	margin-right: 2cm;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	border: 1px solid gray;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	background-color: #d0f0f6;
+	text-align: left;
+	padding: 8px;}
