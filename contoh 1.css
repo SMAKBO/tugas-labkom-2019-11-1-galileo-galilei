@@ -1,0 +1,128 @@
+.container {
+	box-sizing: border-box;
+	color: black;}
+body {
+	font-family: arial;
+	padding: 10px;
+	background-image: url("lightblue.jpg");
+}
+.header {
+	text-align: center;
+	padding: 1px;
+	background: white;
+}
+.header .judul {font-size: 25px;}
+.header ul li {
+	display: inline-block;
+	margin-right: 10px;
+}
+.header a {
+	text-decoration: none;
+	color: lightblue;
+	text-align: center;
+	float: left;
+	display: block;
+	padding: 10px 15px;
+}
+
+.header a:hover {
+	background-color: lightgrey;
+	color: white;
+}
+
+.grid-1 {
+  display: grid;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 10px 300px 200px;
+  grid-gap: 20px;
+  
+  grid-template-areas: "header   header   header"
+                       "main     main     sidebar"
+                       "footer   footer   footer";
+}
+
+.grid-1 div {
+  color: white;
+  font-size: 20px;
+  }
+
+.item-2 {
+  background-color: rgba(0, 0, 230, 0.4);
+  grid-area: main;
+  content: 200px;
+  height: 1000px;
+}
+.item-3 {
+  background: rgba(255, 255, 255, 0.8);
+  grid-area: sidebar;
+  margin-left: 50px;
+}
+.item-3 ul li {
+	margin-left: 5px;
+}
+.item-3 a {
+	text-decoration: none;
+	color: #3333ff;
+	text-align: left;
+	float: left;
+	list-style-type: none;
+}
+.item-3 a:hover {
+	background-color: lightgrey;
+	color: white; 
+}
+.item-4 {
+	margin-top: 700px;
+	background: #99ccff;
+	grid-area: footer;
+	padding: 30px;
+}
+.item-4 a {
+	color: white;
+	text-decoration: none;
+}
+.item-4 a:hover {
+	background-color: lightgrey;
+}
+.contoh {
+	color: black;
+	background-color: lightgrey;
+	text-align: left;
+	border-bottom-style: dashed;
+}
+.grid-container {
+	display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.menu a {
+	background-color: white;
+	text-decoration: none;
+	color: lightblue;
+	text-align: left;
+	float: left;
+}
+p {
+	font-family: arial;
+	margin-right: 15px;
+	margin-left:15px;
+	margin-top: 30px;
+	text-indent: 10%;
+	text-align: justify-all;
+	word-spacing: 10px;
+}
